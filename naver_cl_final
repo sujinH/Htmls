@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제14-naver</title>
+  <!-- 네이버 로그인 화면 페이지를 구성하시오. -->
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: auto;
+}
+.wrap{
+  width: 530px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.top select {
+  padding: 5;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  margin: 110px 0px 70px;
+}
+.main{
+  border: 2px solid gainsboro;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.bar{
+  display: flex;
+  justify-content: space-around;
+  font-size: 19px;
+  padding: 0px 15px;
+  z-index: 5;
+}
+.bar span{
+  border: 2px solid gainsboro;
+  padding: 10px;
+  flex: 1 1 0;
+  z-index: 5;
+}
+.idpw{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 16px;
+  margin-top: -2px;
+}
+.id{
+  height: 40px;
+  font-size: 20px;
+  padding: 8px;
+  font-size: 16px;
+}
+.password{
+  height: 40px;
+  font-size: 20px;
+  padding: 8px;
+  font-size: 16px;
+}
+.log_check{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px;
+}
+.find_nav{
+  border-right : 1px solid grey;
+  padding-right: 20px;
+}
+.log{
+  text-align: center;
+  background-color  : rgb(86, 202, 136);
+  height: 50px;
+  margin: 10px 10px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.log a{
+  color: white;
+}
+.find a{
+  color: gray;
+  margin: 10px;
+}
+a{
+  text-decoration: none
+}
+.ad{
+  border: 1px solid gainsboro;
+  margin: 40px;
+}
+.footer{
+  margin: 30px;
+}
+.footer a{
+  color: dimgray;
+  font-size: 12px;
+}
+.footer_nav{
+  border-right: 1px solid silver;
+  padding-right: 10px;
+}
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <select name="lang" id="lang">
+        <option value="1" selected>한국어</option>
+        <option value="2">English</option>
+        <option value="3">中國語</option>
+      </select>
+    </div>
+    <div class="header">
+      <a href="http://www.naver.com">
+        <img src="naver.png" alt="" width="300px" height="55px"></a>
+    </div>
+    <div class="main">
+      <div class="bar">
+        <span>ID로그인</span>
+        <span>일회용 번호</span>
+        <span>QR코드</span>
+      </div>
+      <div class="idpw">
+        <input type="text" placeholder=" 아이디" class="id">
+        <input type="password" placeholder=" 비밀번호" class="password">
+      </div>
+      <div class="log_check">
+        <span><input type="checkbox">&nbsp;로그인 상태 유지</span>
+        <span>IP보안</span>
+      </div>
+      <div class="log">
+        <a href="#">로그인</a>
+      </div>
+    </div>
+    <div class="find">
+      <span><a href="#" class="find_nav">비밀번호 찾기</a></span>
+      <span><a href="#" class="find_nav">아이디 찾기</a></span>
+      <span><a href="#">회원가입</a></span>
+    </div>
+    <div class="ad">
+      <a href="#"><img src="banner2.jpg" alt="" width="500px" height="150px" ></a>
+    </div>
+    <div class="footer">
+      <div style="margin-bottom: 20px;">
+        <span><a href="#" class="footer_nav">이용약관</a></span>
+        <span><a href="#" class="footer_nav">개인정보처리방침</a></span>
+        <span><a href="#" class="footer_nav">책임의 한계와 법적고지</a></span>
+        <span><a href="#">회원정보 고객센터</a></span><br>
+      </div>
+      <div>
+        <img src="naver.png" alt="" width="80px" height="15px">
+        <span>© NAVER Corp. All Rights Reserved.</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
