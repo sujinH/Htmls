@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>naver_cl</title>
+
+<style>
+
+  * {padding: 0; margin: 0;
+    /* border: 1px solid skyblue; */
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 700px; 
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 50px;
+  } 
+
+  a {text-decoration: none;}
+
+  .boxes {
+    width: 75%;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
+  .box1 {
+    display: flex;
+    width: 100%;
+  }
+
+  .box1 span{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 15px 5px 15px 5px;
+  }
+  
+  .box1 span a:visited{ color: black;}
+  .box1 span a {color: black; font-size: 23px;}
+
+  .box2{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 16px;
+    margin-top: -2px;
+  }
+  .id{
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .pw{
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+
+</style>
+
+</head>
+<body>
+  
+  <div class="wrap">
+    <div id="logo"><img src="naver.png" alt="네이버_로고" width="250px" height="50px"></div>
+    <div class="boxes">
+      <div class="box1">
+        <span><a href="#"> ID 로그인</a></span>
+        <span><a href="#"> 일회용 로그인</a></span>
+        <span><a href="#"> QR 로그인</a></span>
+      </div>
+      <div class="box2">
+       
+        <div class="id"><input type="text" placeholder="아이디"></div>
+        <div class="pw"><input type="password" placeholder="비밀번호"></div>
+       
+
+      </div>
+      <div class="box3">
+        <span><input type="checkbox" value="로그인 상태 유지"></span>
+        <span><a href="#">IP 보안</a></span>
+      </div>
+      <div id="log">
+        <a href="#">로그인</a>
+      </div>
+
+    </div>
+    <div class="search">
+      <span><a href="#">비밀번호 찾기</a></span>
+      <span><a href="#">아이디 찾기</a></span>
+      <span><a href="#">회원가입</a></span>
+    </div>
+    <div id="banner">
+      <img src="banner.jpg" alt="배너" width="300px" height="200px">
+    </div>
+
+
+  </div>
+
+</body>
+</html>
